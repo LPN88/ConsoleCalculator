@@ -11,6 +11,7 @@ namespace UnitTestCalculator
         public void TestMethod1()
         { 
             Assert.AreEqual<decimal>(Program.ComputeEquation("(14-2)*13"),156);
+            Assert.AreEqual<decimal>(Program.ComputeEquation("(14-2^4)*13"), -25);
         }
 
         [TestMethod]
