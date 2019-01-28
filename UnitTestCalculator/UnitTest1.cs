@@ -7,6 +7,7 @@ namespace UnitTestCalculator
     [TestClass]
     public class UnitTest1
     {
+        //Правильность расчета
         [TestMethod]
         public void TestMethod1()
         { 
@@ -14,6 +15,7 @@ namespace UnitTestCalculator
             Assert.AreEqual<decimal>(Program.ComputeEquation("(14-2^4)*13"), -25);
         }
 
+        //Ожидание ошибки при делении на 0
         [TestMethod]
         [ExpectedException(typeof(DivideByZeroException))]
         public void TestMethod2()
@@ -21,6 +23,7 @@ namespace UnitTestCalculator
             Assert.AreEqual(Program.ComputeEquation("14-(2-(2132-45,6)/(35-7*5)"), -12);
         }
 
+        //Корректность выражения
         [TestMethod]
         public void TestMethod3()
         {            
