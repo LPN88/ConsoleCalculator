@@ -27,12 +27,6 @@ namespace UnitTestCalculator
             Assert.IsTrue(!Program.ValidateInput("2+-5)",out error));
             Assert.IsTrue(error != null);
         }
-
-        [TestMethod]
-        public void TestMethod4()
-        {
-            string error;
-            Assert.IsTrue(Program.ValidateInput("2^5,5-10)", out error));          
-        }
+      
     }
 }
