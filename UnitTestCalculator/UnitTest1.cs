@@ -7,7 +7,7 @@ namespace UnitTestCalculator
     [TestClass]
     public class UnitTest1
     {
-        //Правильность расчета 32124
+        //Правильность расчета
         [TestMethod]
         public void TestMethod1()
         { 
